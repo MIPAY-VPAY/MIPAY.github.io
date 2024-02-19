@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="layui/css/layui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>LayUI Vertical Navbar with Ajax Content</title>
+    </head>
+    <body class="layui-layout-body">
+        <div class="layui-layout layui-layout-admin">
+            <div class="layui-header">
+                <div class="layui-logo">
+                    <img src="favicon.ico" alt="logo">
+                    <span id="headerTitle"></span>
+                </div>
+            </div>
+            <div class="layui-side layui-bg-black">
+                <div class="layui-side-scroll">
+                    <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <a class="" href="javascript:;">Navigation</a>
+                            <dl class="layui-nav-child">
+                                <dd>
+                                    <a href="#/page1">
+                                        <i class="fas fa-link fa-fade"></i>
+                                        链接
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="#/page2">
+                                        <i class="fas fa-image fa-fade"></i>
+                                        图片
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="#/page3">
+                                        <i class="fas fa-cog fa-spin"></i>
+                                        语录
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layui-body">
+                <div id="loading" class="loading">
+                    <div class="loading-spinner"></div>
+                </div>
+                <div class="layui-body-content"></div>
+            </div>
+            <!--<div class="layui-footer">© LayUI Vertical Navbar with Ajax Content</div>-->
+        </div>
+        <script src="JavaScript/jquery-3.7.0.min.js"></script>
+        <script src="layui/layui.js"></script>
+        <script src="JavaScript/index.js"></script>
+    </body>
+</html>
